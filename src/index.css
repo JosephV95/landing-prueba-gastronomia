@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/*todo  AQUÍ CREO MIS CLASES PERSONALIZADAS */
+#navMio a:hover{
+    color: orange;
+}
+
+#sobreNosotros .aboutTitulo{
+    color: #5f5950;
+}
+#sobreNosotros .aboutTexto{
+    color: #68645e;
+}
+
+/*? Estilos para el Footer  */
+.redesLinks a {
+    background: #46423b;
+    display: inline-block;
+    padding: 7px 0 0 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    outline: solid 2px #ffb03b;
+    transition: 0.3s;
+    /* font-size: 18px;
+    line-height: 1; */
+}
+
+.redesLinks a:hover{
+    background: #ffb03b;
+}
+
+/** Estilo para el hero  */
+.cardHero{
+    padding: 50px 30px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.12);
+    color: #5f5950;
+    transition-duration: 0.3s;
+}
+/* .cardHero span{
+    color: #fabf66;
+} */
+.cardHero h2{
+    color: #6c665c;
+}
+.cardHero p{
+    color: #aaaaaa;
+}
+
+.cardHero:hover{
+    background-color: #ffb03b;
+    padding: 40px 30px 60px 30px;
+    box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+}
+.cardHero:hover span, .cardHero:hover h2,
+.cardHero:hover p{
+    color: #fff;
+}
+
+/*? Estilos para el Carousel en Eventos privados  */
+#eventos::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 0;
+}
+
+/* Efecto para mejorar el desplazamiento del scroll (se usa en el desplazamiento de los links del nav */
+*{
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+h1, h1 span{
+    font-family: "Kalam", cursive;
+}

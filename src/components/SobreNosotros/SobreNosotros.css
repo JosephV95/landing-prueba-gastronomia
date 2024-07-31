@@ -1,0 +1,11 @@
+ul li{
+    /* display: flex;
+    align-items: center; */
+    position: relative;
+}
+
+ul li box-icon{
+    height: 22px;
+    position: absolute;
+    left: -25px;
+}

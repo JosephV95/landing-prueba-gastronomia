@@ -1,0 +1,17 @@
+
+/*? codigo para editar la barra de scroll  */
+body::-webkit-scrollbar {
+    width: 15px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #fee3bc;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #ffb03b;    /* color of the scroll thumb */
+    border-radius: 25px;       /* roundness of the scroll thumb */
+    border: 2px solid #ff8c00;  /* creates padding around scroll thumb */
+  }
+
+  
