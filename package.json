@@ -1,5 +1,5 @@
 {
-  "name": "plantilla-resto1",
+  "name": "landing-prueba-gastronomia",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -15,7 +15,6 @@
     "@reduxjs/toolkit": "^2.1.0",
     "aos": "^2.3.4",
     "boxicons": "^2.1.4",
-    "filterizr": "^2.2.4",
     "fslightbox-react": "^1.7.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
