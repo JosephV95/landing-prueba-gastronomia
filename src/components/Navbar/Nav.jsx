@@ -147,7 +147,7 @@ useEffect(()=>{
           className="mr-4 cursor-pointer py-1.5 text-3xl font-bold font-Dancing tracking-widest" //? fuentes agregadas de Google Fonts y se agrego letter spacing
           data-aos="zoom-in" data-aos-duration="1200" data-aos-easing="linear" data-aos-delay="1800"
         >
-          Delicious
+          GastronoPage
         </Typography>
         <div className="flex items-center gap-4 ">
           <div className="mr-4 hidden lg:block">{navList}</div>

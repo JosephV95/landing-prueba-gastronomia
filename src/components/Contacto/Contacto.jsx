@@ -3,26 +3,6 @@ import ItemContacto from "./ItemContacto";
 
 export default function Contacto() {
 
-  //todo  Funciones necesarias para lograr el efecto hover en el color de los iconos antes de dividir en componentes (itemContacto)
-  // const [hoverStates, setHoverStates] = useState({
-  //   ubicacion: false,
-  //   horarios: false,
-  //   email: false,
-  //   llamanos: false
-  // });
-  // const handleMouseEnter = (key) => {
-  //   setHoverStates((prev) => ({
-  //     ...prev,
-  //     [key]: true
-  //   }));
-  // };
-  // const handleMouseLeave = (key) => {
-  //   setHoverStates((prev) => ({
-  //     ...prev,
-  //     [key]: false
-  //   }));
-  // };
-
   return (
     <section className="flex flex-col items-center px-2 pt-16 lg:px-5 gap-y-3" id="contacto">
       <h1 className="text-center text-3xl font-semibold text-[#5f5950]"><span className="text-[#ffb03b]">Contacta</span> con nosotros</h1>
@@ -30,16 +10,7 @@ export default function Contacto() {
         Encontranos en nuestro local o envianos tu mensaje
       </p>
 
-      <div className="w-full">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.3249616290364!2d-68.844271424675!3d-32.889575473616894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e091bcd1d08f5%3A0x3a927947c573062!2sMiraflores%20REST%C3%93!5e0!3m2!1ses-419!2sar!4v1712964718437!5m2!1ses-419!2sar"
-          width="100%"  height="350" 
-          style={{ border: '3px solid #ffb03b', boxShadow:'0 0 12px #ffb03b' }}
-          allowFullScreen=""
-          loading="lazy"
-          title="Mapa del restaurante"
-        ></iframe>
-      </div>
+     
 
       <article className=" md:w-[85%]  my-5 shadow-[0_0_19px_rgba(0,0,0,0.15)]">
         <div className="flex flex-wrap justify-evenly px-1 md:px-5 py-7 gap-y-2">
