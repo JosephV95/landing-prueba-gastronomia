@@ -11,7 +11,8 @@ import 'aos/dist/aos.css'; // You can also use <link> for styles
 const router = createBrowserRouter ([
   {path:'/', element: <LayoutPrincipal />, children:[
     {path: '/', element: <Home /> },
-    {path:'/menu-completo', element: <MenuCompleto/>}
+    {path:'/menu-completo', element: <MenuCompleto/>},
+    {path:'/contacto', element: <MenuCompleto/>}
   ]}
 ])
 
