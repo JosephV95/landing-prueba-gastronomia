@@ -128,12 +128,12 @@ useEffect(()=>{
       </li>
 
       <li>
-        <a href="#contacto" className={`flex items-center  p-1 font-semibold text-base duration-300  ${linkActive == "contacto"? "text-[#ffb03b] underline underline-offset-2" :"text-gray-100"}`} onClick={()=>{setLinkActive("contacto"); navigate("/catalogo")}}  data-aos="fade-down" data-aos-duration="1100" data-aos-easing="linear" data-aos-delay="500" data-aos-once="true">
+        <a href="#contacto" className={`flex items-center  p-1 font-semibold text-base duration-300  ${linkActive == "contacto"? "text-[#ffb03b] underline underline-offset-2" :"text-gray-100"}`} onClick={()=>{setLinkActive("contacto"); navigate("/catalogo")}} >
           Contacto
         </a>
       </li>
       <li>
-        <a href="#contacto" className={`flex items-center  p-1 font-semibold text-base duration-300  ${linkActive == "contacto"? "text-[#ffb03b] underline underline-offset-2" :"text-gray-100"}`} onClick={()=>{setLinkActive("contacto"); navigate("/contacto")}}  data-aos="fade-down" data-aos-duration="1100" data-aos-easing="linear" data-aos-delay="500" data-aos-once="true">
+        <a href="#contacto" className={`flex items-center  p-1 font-semibold text-base duration-300  ${linkActive == "contacto"? "text-[#ffb03b] underline underline-offset-2" :"text-gray-100"}`} onClick={()=>{setLinkActive("contacto"); navigate("/contacto")}} >
           Contacto
         </a>
       </li>

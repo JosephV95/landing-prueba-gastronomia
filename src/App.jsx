@@ -7,12 +7,13 @@ import MenuCompleto from "./pages/MenuCompleto";
 //! Importaciones para el funcionamiento de AOS 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
+import Contacto from "./pages/Contacto";
 
 const router = createBrowserRouter ([
   {path:'/', element: <LayoutPrincipal />, children:[
     {path: '/', element: <Home /> },
-    {path:'/menu-completo', element: <MenuCompleto/>},
-    {path:'/contacto', element: <MenuCompleto/>}
+    {path:'/catalogo', element: <MenuCompleto/>},
+    {path:'/contacto', element: <Contacto/>}
   ]}
 ])
 
