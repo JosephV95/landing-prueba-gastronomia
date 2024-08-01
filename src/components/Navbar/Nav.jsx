@@ -96,7 +96,7 @@ useEffect(()=>{
       <li>
         <Menu allowHover>
           <MenuHandler >
-            <a href="#menu" className={`flex items-center  p-1 font-semibold text-base duration-300  ${linkActive == "menu"? "text-[#ffb03b] underline underline-offset-2" :"text-gray-100"}`} onClick={()=>{setLinkActive("menu"); navigate("/#menu")}} data-aos="fade-down" data-aos-duration="1100" data-aos-easing="linear" data-aos-delay="200" data-aos-once="true"
+            <a href="#menu" className={`flex items-center  p-1 font-semibold text-base duration-300  ${linkActive == "menu"? "text-[#ffb03b] underline underline-offset-2" :"text-gray-100"}`} onClick={()=>{setLinkActive("menu")}} data-aos="fade-down" data-aos-duration="1100" data-aos-easing="linear" data-aos-delay="200" data-aos-once="true"
             >
               Menú {" "}
               <ChevronDownIcon
@@ -126,8 +126,14 @@ useEffect(()=>{
           Galería
         </a>
       </li>
+
       <li>
-        <a href="#contacto" className={`flex items-center  p-1 font-semibold text-base duration-300  ${linkActive == "contacto"? "text-[#ffb03b] underline underline-offset-2" :"text-gray-100"}`} onClick={()=>{setLinkActive("contacto"); navigate("/#contacto")}}  data-aos="fade-down" data-aos-duration="1100" data-aos-easing="linear" data-aos-delay="500" data-aos-once="true">
+        <a href="#contacto" className={`flex items-center  p-1 font-semibold text-base duration-300  ${linkActive == "contacto"? "text-[#ffb03b] underline underline-offset-2" :"text-gray-100"}`} onClick={()=>{setLinkActive("contacto"); navigate("/catalogo")}}  data-aos="fade-down" data-aos-duration="1100" data-aos-easing="linear" data-aos-delay="500" data-aos-once="true">
+          Contacto
+        </a>
+      </li>
+      <li>
+        <a href="#contacto" className={`flex items-center  p-1 font-semibold text-base duration-300  ${linkActive == "contacto"? "text-[#ffb03b] underline underline-offset-2" :"text-gray-100"}`} onClick={()=>{setLinkActive("contacto"); navigate("/contacto")}}  data-aos="fade-down" data-aos-duration="1100" data-aos-easing="linear" data-aos-delay="500" data-aos-once="true">
           Contacto
         </a>
       </li>
