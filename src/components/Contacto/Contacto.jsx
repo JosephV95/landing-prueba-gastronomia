@@ -4,13 +4,11 @@ import ItemContacto from "./ItemContacto";
 export default function Contacto() {
 
   return (
-    <section className="flex flex-col items-center px-2 pt-16 lg:px-5 gap-y-3" id="contacto">
+    <section className="flex flex-col items-center px-2 pt-16 lg:px-5 gap-y-3" >
       <h1 className="text-center text-3xl font-semibold text-[#5f5950]"><span className="text-[#ffb03b]">Contacta</span> con nosotros</h1>
       <p className="text-center text-lg text-[#68645e]"> 
         Encontranos en nuestro local o envianos tu mensaje
       </p>
-
-     
 
       <article className=" md:w-[85%]  my-5 shadow-[0_0_19px_rgba(0,0,0,0.15)]">
         <div className="flex flex-wrap justify-evenly px-1 md:px-5 py-7 gap-y-2">

@@ -16,11 +16,11 @@ export default function Nav() {
   //! funcion para oscurecer el bg del nav al hacer cierta cantidad de scroll hacia abajo 
   const selectNav = document.getElementById('navMio')
   const scrolled = ()=>{
-    if (window.scrollY > 100 && linkActive== 'inicio') {
-      selectNav.classList.add('bg-black/70')
+    if (window.scrollY > 100) {
+      selectNav.classList.add('bg-black')
       selectNav.classList.remove('bg-transparent')
     } else {
-        selectNav.classList.remove('bg-black/70')
+      selectNav.classList.remove('bg-black')
     }
 }
 
@@ -30,9 +30,10 @@ export default function Nav() {
       () => window.innerWidth >= 960 && setOpenNav(false)
     );
 
-      selectNav.classList.remove('bg-black')
+    if (linkActive === "inicio") {
       window.addEventListener('scroll', scrolled)
-  }, []);
+    }
+  }, [linkActive]);
   
   //? Efecto para oscurecer el bg en mobile, se suma al efecto del scroll anterior
   React.useEffect(()=>{
@@ -49,18 +50,18 @@ export default function Nav() {
   const navList = (
     <ul className="t-2 mb-4 flex flex-col gap-3 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-4 items-center">
       <li>
-        <a className={`flex items-center  p-1 font-semibold text-base duration-300 hover:cursor-pointer  ${linkActive == "inicio"? "text-[#ffb03b] underline underline-offset-2" :"text-gray-100"}`} onClick={()=>{setLinkActive("inicio"); navigate("/")}} >
+        <a className={`flex items-center  p-1 font-semibold text-base duration-300 hover:cursor-pointer  ${linkActive === "inicio"? "text-[#ffb03b] underline underline-offset-2" :"text-gray-100"}`} onClick={()=>{setLinkActive("inicio"); navigate("/")}} >
           Inicio
         </a>
       </li>
 
       <li>
-        <a className={`flex items-center  p-1 font-semibold text-base duration-300 hover:cursor-pointer  ${linkActive == "catalogo"? "text-[#ffb03b] underline underline-offset-2" :"text-gray-100"}`} onClick={()=>{setLinkActive("catalogo"); navigate("/catalogo")}} >
+        <a className={`flex items-center  p-1 font-semibold text-base duration-300 hover:cursor-pointer  ${linkActive === "catalogo"? "text-[#ffb03b] underline underline-offset-2" :"text-gray-100"}`} onClick={()=>{setLinkActive("catalogo"); navigate("/catalogo")}} >
           Catalogo
         </a>
       </li>
       <li>
-        <a className={`flex items-center  p-1 font-semibold text-base duration-300 hover:cursor-pointer  ${linkActive == "contacto"? "text-[#ffb03b] underline underline-offset-2" :"text-gray-100"}`} onClick={()=>{setLinkActive("contacto"); navigate("/contacto")}} >
+        <a className={`flex items-center  p-1 font-semibold text-base duration-300 hover:cursor-pointer  ${linkActive === "contacto"? "text-[#ffb03b] underline underline-offset-2" :"text-gray-100"}`} onClick={()=>{setLinkActive("contacto"); navigate("/contacto")}} >
           Contacto
         </a>
       </li>
@@ -77,7 +78,7 @@ export default function Nav() {
           href="#"
           onClick={()=>{navigate("/")}}
           className="mr-4 cursor-pointer py-1.5 text-3xl font-bold font-Dancing tracking-widest" 
-          data-aos="zoom-in" data-aos-duration="1200" data-aos-easing="linear" data-aos-delay="1800"
+          data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="linear" data-aos-delay="500"
         >
           GastronoPage
         </Typography>

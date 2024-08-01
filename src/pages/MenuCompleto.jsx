@@ -25,7 +25,7 @@ export default function MenuCompleto() {
 
   useEffect(() => {
     dispatch(comidasActions.obtener_comidas(arrayDeComidas.comidas))
-    filtroParaComidas(comidasRespaldoStore, "carnes")
+    filtroParaComidas(comidasRespaldoStore, "all")
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
