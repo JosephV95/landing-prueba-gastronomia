@@ -10,19 +10,7 @@ import { useNavigate } from "react-router-dom";
 export default function Nav() {
   const [openNav, setOpenNav] = React.useState(false);
   const navigate = useNavigate()
-
   const [linkActive, setLinkActive] = React.useState("inicio")
-
-  //! funcion para oscurecer el bg del nav al hacer cierta cantidad de scroll hacia abajo 
-  const selectNav = document.getElementById('navMio')
-  const scrolled = ()=>{
-    if (window.scrollY > 100) {
-      selectNav.classList.add('bg-black')
-      selectNav.classList.remove('bg-transparent')
-    } else {
-      selectNav.classList.remove('bg-black')
-    }
-}
 
   React.useEffect(() => {
     window.addEventListener(
@@ -30,10 +18,19 @@ export default function Nav() {
       () => window.innerWidth >= 960 && setOpenNav(false)
     );
 
-    if (linkActive === "inicio") {
-      window.addEventListener('scroll', scrolled)
+  //    //! funcion para oscurecer el bg del nav al hacer cierta cantidad de scroll hacia abajo 
+  const selectNav = document.getElementById('navMio')
+  const scrolled = ()=>{
+    if (window.scrollY > 200) {
+      selectNav.classList.add('bg-black')
+      selectNav.classList.remove('bg-transparent')
+    } else {
+      selectNav.classList.remove('bg-black')
     }
-  }, [linkActive]);
+  }   
+      window.addEventListener('scroll', scrolled)
+
+  }, []);
   
   //? Efecto para oscurecer el bg en mobile, se suma al efecto del scroll anterior
   React.useEffect(()=>{
@@ -69,7 +66,8 @@ export default function Nav() {
   );
 
   return (
-    <Navbar id="navMio" className={`fixed top-0 z-[100] h-max max-w-full rounded-b-xl rounded-t-none border-none py-2 px-8 lg:px-28  ${linkActive!="inicio" ?'bg-black' :'bg-transparent' }`  }
+    <Navbar id="navMio" className={`fixed top-0 z-[100] h-max max-w-full rounded-b-xl rounded-t-none border-none py-2 px-8 lg:px-28 
+      ${linkActive!=="inicio" ?'bg-black' :'bg-transparent' }`}
     style={{backdropFilter: "none", boxShadow:"none"}}>
       
       <div className="flex items-center justify-between text-gray-200">

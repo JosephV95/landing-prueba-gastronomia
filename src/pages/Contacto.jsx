@@ -2,7 +2,7 @@ import ItemContacto from "../components/Contacto/ItemContacto";
 
 export default function Contacto() {
   return (
-    <section className="flex flex-col items-center px-2 pt-16 lg:px-5 gap-y-3" id="contacto">
+    <section className="flex flex-col items-center px-2 pt-20 lg:px-5 gap-y-3">
       <h1 className="text-center text-3xl font-semibold text-[#5f5950]"><span className="text-[#ffb03b]">Contacta</span> con nosotros</h1>
       <p className="text-center text-lg text-[#68645e]"> 
         Encontranos en nuestro local o envianos tu mensaje
