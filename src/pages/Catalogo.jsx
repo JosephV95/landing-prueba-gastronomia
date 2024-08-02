@@ -12,7 +12,6 @@ export default function Catalogo() {
   const categoriasComidas = ['carnes', 'pastas', 'sopas', 'pizzas', 'hamburguesas', 'ensaladas'];
   const [categoriaElegida, setCategoriaElegida] = useState("all")
 
-  //* funcion para filtrado, en caso de que se clickee 'todas' se pasa como parametro el backup con todas las comidas
   const filtroParaComidas = (elArray, palabra)=>{
     if (palabra != "all") {
       setCategoriaElegida(palabra)
@@ -47,7 +46,6 @@ export default function Catalogo() {
             {categoriasComidas.map((categoria, index)=>(
               <li key={index} className={`px-2.5 py-1.5 lg:px-4 lg:py-2 cursor-pointer border-2 border-solid border-[#ffb03b] rounded-3xl inline hover:bg-[#ffb03b] hover:text-white duration-300 ${categoriaElegida == categoria ? "bg-[#ffb03b] text-white" :""}`} 
               onClick={()=> {filtroParaComidas(comidasRespaldoStore, categoria)}}>{categoria.charAt(0).toUpperCase() + categoria.slice(1)}</li>
-              // ! Los metodos charAt + slice de arriba son para lograr que la primer letra del string este en mayuscula
             ))}
           </ul>
         </div>

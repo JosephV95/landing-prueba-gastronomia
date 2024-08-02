@@ -3,7 +3,6 @@ import { useState } from "react";
 // eslint-disable-next-line react/prop-types
 export default function ItemContacto({ titulo, texto1, texto2, icono }) {
   const [efectoHover, setEfectoHover] = useState(false);
-
   return (
     <div
       className="w-[71%] sm:w-1/2 md:w-1/2 lg:w-1/4 group"

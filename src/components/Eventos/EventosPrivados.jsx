@@ -1,14 +1,10 @@
-
 import { Carousel } from "@material-tailwind/react";
  
 export default function EventosPrivados() {
   return (
       <article className="w-full relative bg-[url('../img/events/events-bg.jpg')] bg-cover bg-center pt-16 pb-9 flex flex-col items-center" id="eventos">
-
         <h1 className="z-20 text-white text-3xl font-bold text-center">Organiza <span className="text-orange-400">tus eventos</span> con nosotros</h1>
         <Carousel className="z-20 " loop  prevArrow={false} nextArrow={false} autoplay autoplayDelay={7000}
-
-        //! navigation es un atributo para personalizar los botones inferiores del carousel (es propio de Material-tailwind) 
         navigation={({ setActiveIndex, activeIndex, length }) => (
           <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
             {new Array(length).fill("").map((_, i) => (
@@ -22,7 +18,6 @@ export default function EventosPrivados() {
             ))}
           </div>
         )}>
-
           <section className="flex flex-wrap  justify-center mt-8 mb-12 gap-x-8 gap-y-3">
             <div className="w-11/12 sm:w-4/5 lg:w-5/12">
               <img src="../img/events/event-custom.jpg" alt="imgEventos" className="h-full w-full object-cover" />
@@ -72,11 +67,9 @@ export default function EventosPrivados() {
                 <li><box-icon name='check-circle' color='#ffb03b'></box-icon> Le ofercemos a tu invitados la mejor atencion y cuentan con la seguridad del local.</li>
                 <li><box-icon name='check-circle' color='#ffb03b'></box-icon> Le ofercemos a tu invitados la mejor atencion y cuentan con la seguridad del local.</li>
               </ul>
-
               <p className="text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ut nobis nesciunt nisi repellendus vero doloribus porro culpa a voluptatibus, aspernatur molestias cupiditate adipisci perferendis! Perspiciatis numquam blanditiis placeat quidem!</p>
             </div>
           </section>
-        
         </Carousel>
       </article>
   );

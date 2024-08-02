@@ -18,9 +18,7 @@ const router = createBrowserRouter ([
 ])
 
 function App() {
-  //! Se inicializa AOS para que funcione en todos los componentes 
   AOS.init();
-  
   return (
     <RouterProvider router={router} />
   );
