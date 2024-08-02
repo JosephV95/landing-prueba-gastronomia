@@ -2,19 +2,15 @@ import { useEffect } from "react";
 import CarouselDelHeader from "../components/Carousel/CarouselDelHeader";
 import Hero from "../components/Hero/Hero";
 import SobreNosotros from "../components/SobreNosotros/SobreNosotros";
-import { traerComidas } from "../service/comidasService";
 import { useDispatch } from "react-redux";
 import comidasActions from "../store/actions/comidasActions";
 import EventosPrivados from "../components/Eventos/EventosPrivados";
-
 import {arrayDeComidas} from "../service/comidasApiLocal"
 
 export default function Home() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    // traerComidas().then(res=> {
-    //   dispatch(comidasActions.obtener_comidas(res))} )
     dispatch(comidasActions.obtener_comidas(arrayDeComidas.comidas))
   }, []);
 
