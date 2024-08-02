@@ -18,7 +18,7 @@ export default function Nav() {
       () => window.innerWidth >= 960 && setOpenNav(false)
     );
 
-  //    //! funcion para oscurecer el bg del nav al hacer cierta cantidad de scroll hacia abajo 
+   //! funcion para oscurecer el bg del nav al hacer cierta cantidad de scroll hacia abajo 
   const selectNav = document.getElementById('navMio')
   const scrolled = ()=>{
     if (window.scrollY > 200) {
@@ -28,7 +28,7 @@ export default function Nav() {
       selectNav.classList.remove('bg-black')
     }
   }   
-      window.addEventListener('scroll', scrolled)
+    window.addEventListener('scroll', scrolled)
 
   }, []);
   
@@ -51,7 +51,6 @@ export default function Nav() {
           Inicio
         </a>
       </li>
-
       <li>
         <a className={`flex items-center  p-1 font-semibold text-base duration-300 hover:cursor-pointer  ${linkActive === "catalogo"? "text-[#ffb03b] underline underline-offset-2" :"text-gray-100"}`} onClick={()=>{setLinkActive("catalogo"); navigate("/catalogo")}} >
           Catalogo

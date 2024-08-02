@@ -1,6 +1,13 @@
+import { useEffect } from "react";
 import ItemContacto from "../components/Contacto/ItemContacto";
 
 export default function Contacto() {
+  useEffect(()=>{
+    const selectNav = document.getElementById('navMio');
+      selectNav.classList.remove('bg-transparent')
+      selectNav.classList.add('bg-black/80')
+  }, [])
+
   return (
     <section className="flex flex-col items-center px-2 pt-20 lg:px-5 gap-y-3">
       <h1 className="text-center text-3xl font-semibold text-[#5f5950]"><span className="text-[#ffb03b]">Contacta</span> con nosotros</h1>
