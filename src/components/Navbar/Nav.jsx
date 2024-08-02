@@ -65,8 +65,7 @@ export default function Nav() {
   );
 
   return (
-    <Navbar id="navMio" className={`fixed top-0 z-[100] h-max max-w-full rounded-b-xl rounded-t-none border-none py-2 px-8 lg:px-28 
-      ${linkActive!=="inicio" ?'bg-black' :'bg-transparent' }`}
+    <Navbar id="navMio" className="fixed top-0 z-[100] h-max max-w-full rounded-b-xl rounded-t-none border-none py-2 px-8 lg:px-28 bg-transparent"
     style={{backdropFilter: "none", boxShadow:"none"}}>
       
       <div className="flex items-center justify-between text-gray-200">
@@ -77,7 +76,7 @@ export default function Nav() {
           className="mr-4 cursor-pointer py-1.5 text-3xl font-bold font-Dancing tracking-widest" 
           data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="linear" data-aos-delay="500"
         >
-          GastronoPage
+          Gastrono
         </Typography>
         <div className="flex items-center gap-4 ">
           <div className="mr-4 hidden lg:block">{navList}</div>
