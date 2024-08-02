@@ -6,8 +6,8 @@ export default function CallToAction({tituloEnHTML, texto }) {
         {tituloEnHTML}
         <p className='text-sm sm:text-base' data-aos="fade-right" data-aos-duration="500" data-aos-easing="linear" data-aos-delay="200">{texto}</p>
         <div className='flex flex-col sm:block' data-aos="zoom-in-up" data-aos-duration="500" data-aos-easing="linear" data-aos-delay="700">
-          <a href='#menu' className='btnCall border-[3px] border-orange-400 rounded-full px-4 py-2 sm:px-6 sm:py-2.5 bg-black/30 mx-4 hover:bg-orange-400 transition duration-300 uppercase font-semibold text-sm mb-2'>Ir al Menú</a>
-          <a className='btnCall border-[3px] border-orange-400 rounded-full px-4 py-2 sm:px-6 sm:py-2.5 bg-black/30 mx-4 hover:bg-orange-400 transition duration-300 uppercase font-semibold text-sm'>Reservar Mesa </a>
+          <a className='hover:cursor-pointer btnCall border-[3px] border-orange-400 rounded-full px-4 py-2 sm:px-6 sm:py-2.5 bg-black/30 mx-4 hover:bg-orange-400 transition duration-300 uppercase font-semibold text-sm mb-2'>Ir al Menú</a>
+          <a className='hover:cursor-pointer btnCall border-[3px] border-orange-400 rounded-full px-4 py-2 sm:px-6 sm:py-2.5 bg-black/30 mx-4 hover:bg-orange-400 transition duration-300 uppercase font-semibold text-sm'>Reservar Mesa </a>
         </div>
         
     </div>
