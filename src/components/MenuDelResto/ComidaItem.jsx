@@ -3,7 +3,7 @@
 export default function ComidaItem({nombre, img, descripcion, precio, categoria}) {
   return (
     <div className={`w-[100%] lg:w-1/2 flex flex-row justify-center pr-1 lg:px-2  filtr-item `} data-category={categoria} 
-    data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="linear"> 
+    data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="linear" data-aos-once="true"> 
         <div className=" flex flex-col items-center justify-center">
             <img src={img} alt={nombre} className="w-16 sm:w-[4.5rem]  object-cover rounded-full border-2 border-orange-500  hover:scale-125 sm:hover:scale-[1.4] hover:transition hover:duration-500" />
             <h3 className="text-gray-800 font-bold font-Satisfy tracking-widest sm:hidden ">${precio}</h3>

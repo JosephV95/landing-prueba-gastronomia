@@ -35,8 +35,8 @@ export default function Catalogo() {
   }, [])
 
   return (
-    <section className="bg-[url('../img/comidas-bg.jpg')] bg-center bg-cover bg-fixed w-full" >
-      <div className="py-20 space-y-6 bg-white/80 ">
+    <section className="bg-[url('../img/comidas-bg.jpg')] bg-center bg-cover bg-fixed w-full " >
+      <div className="py-20 space-y-6 bg-white/80 min-h-[70vh]">
         <h1 className="text-3xl text-center font-bold text-[#5f5950]">Disfruta nuestro <span className="text-[#ffb03b]">menú Completo</span></h1>
 
         <div>
@@ -50,7 +50,7 @@ export default function Catalogo() {
           </ul>
         </div>
 
-        <article className="w-full flex flex-row justify-center flex-wrap gap-y-2 px-2 lg:px-12">
+        <article className="w-full flex flex-row justify-center flex-wrap gap-y-2 px-2 lg:px-12 ">
           {comidasStore.map((comida, index)=>(
             <ComidaItem key={index} nombre={comida.nombre} img={comida.imgUrl} descripcion={comida.descripcion} precio={comida.precio}></ComidaItem>
           ))}
