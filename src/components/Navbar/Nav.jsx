@@ -18,7 +18,6 @@ export default function Nav() {
       () => window.innerWidth >= 960 && setOpenNav(false)
     );
 
-   //! funcion para oscurecer el bg del nav al hacer cierta cantidad de scroll hacia abajo 
   const selectNav = document.getElementById('navMio')
   const scrolled = ()=>{
     if (window.scrollY > 200) {
@@ -29,10 +28,8 @@ export default function Nav() {
     }
   }   
     window.addEventListener('scroll', scrolled)
-
   }, []);
   
-  //? Efecto para oscurecer el bg en mobile, se suma al efecto del scroll anterior
   React.useEffect(()=>{
     const selectNav = document.getElementById('navMio');
     if(openNav && window.screen.width < 960){
@@ -80,7 +77,6 @@ export default function Nav() {
         </Typography>
         <div className="flex items-center gap-4 ">
           <div className="mr-4 hidden lg:block">{navList}</div>
-         
           <IconButton
             variant="text"
             className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
