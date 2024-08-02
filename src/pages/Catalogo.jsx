@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import comidasActions from "../store/actions/comidasActions";
 import { arrayDeComidas } from "../service/comidasApiLocal";
 
-export default function MenuCompleto() {
+export default function Catalogo() {
   const dispatch = useDispatch()
   const comidasStore = useSelector(store => store.comidasReducer.comidas)
   const comidasRespaldoStore = useSelector(store => store.comidasReducer.comidasRespaldo)

@@ -8,7 +8,6 @@ import { useDispatch } from "react-redux";
 import comidasActions from "../store/actions/comidasActions";
 import EventosPrivados from "../components/Eventos/EventosPrivados";
 import GalleriaImg from "../components/GalleriaImg/GalleriaImg";
-import Contacto from "../components/Contacto/Contacto";
 
 import {arrayDeComidas} from "../service/comidasApiLocal"
 
@@ -30,8 +29,6 @@ export default function Home() {
 
       <EventosPrivados />
       <GalleriaImg />
-
-      <Contacto />
     </div>
   );
 }

@@ -2,17 +2,17 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./App.css";
 import LayoutPrincipal from "./layouts/LayoutPrincipal";
 import Home from "./pages/Home"
-import MenuCompleto from "./pages/MenuCompleto";
 
 //! Importaciones para el funcionamiento de AOS 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import Contacto from "./pages/Contacto";
+import Catalogo from "./pages/Catalogo";
 
 const router = createBrowserRouter ([
   {path:'/', element: <LayoutPrincipal />, children:[
     {path: '/', element: <Home /> },
-    {path:'/catalogo', element: <MenuCompleto/>},
+    {path:'/catalogo', element: <Catalogo/>},
     {path:'/contacto', element: <Contacto/>}
   ]}
 ])
