@@ -10,7 +10,7 @@ import { useNavigate } from "react-router-dom";
 export default function Nav() {
   const [openNav, setOpenNav] = React.useState(false);
   const navigate = useNavigate()
-  const [linkActive, setLinkActive] = React.useState("inicio")
+  const [linkActive, setLinkActive] = React.useState('')
 
   React.useEffect(() => {
     window.addEventListener(
